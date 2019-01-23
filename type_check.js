@@ -1,22 +1,18 @@
-function type_check_v2(valeur, args) {
-    for (var arg in args) {
-      if(arg === "type"){
-          if(typeof(valeur) !== args[arg]){
-            return false;
-        }
-      }
-      
-      if(arg === "value"){
-          if(valeur !== args[arg]){
-            return false;
-        }
-      }
-      
-      if(arg === "enum"){
-          if(!args[arg].indexOf(valeur)){
-            return false;
-        }
-      }
-    }
-    return true;
+ var type_check_v2 = (value, args) => {
+  if (!args.type && !args.value && !args.enum) {
+      return false;
   }
+  if (args.enum) {
+      return args.enum.indexOf(value) !== -1;
+  }
+  if (args.type && !args.value) {
+      return args.type === typeof value;
+  }
+  if (!args.type && args.value) {
+      return args.value === value;
+  }
+  if (args.type && args.value) {
+      return args.type === typeof value && args.value === value;
+  }
+  return true;
+};
