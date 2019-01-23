@@ -1,7 +1,11 @@
-import BaseComponent from "./BaseComponent.js";
-import HeaderComponent from "./components/HeaderComponent.js";
+import BaseComponent from "/BaseComponent.js";
+import HomeComponent from "./HomeComponent.js";
+import "./interpolate.js";
 
-const headerComponent = new HeaderComponent();
-rootComponent.display().then((content) => {
-    document.getElementById('root').innerHTML = content;
-});
+//ici j'appelle la homepage mais il faudrait changer ce qu'on appelle en fonction de la route
+
+const homePage = new HomeComponent();
+var home = homePage.display()
+
+var to_display = home;
+document.getElementById('root').innerHTML = to_display;

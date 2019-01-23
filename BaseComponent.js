@@ -2,23 +2,26 @@ export default function BaseComponent()
 {
 	this.currProps = {};
 
-	this.display = function(newProps) => {
+	this.display = function(newProps) {
 		if (shouldUpdate(newProps)) {
 			let output = this.render();
 
-			if (!typeChecker(output, {type: 'string'})) {
+			console.log(output);
+
+			if (!type_check(output, {type: 'string'})) {
                 throw new TypeError(`Output not a string`);
             }
 
-            let finalDisplay = output.interpolate()
+            return output.interpolate(this.currProps);
 		}
 	}
 
 	this.render = () => '';
 
 	const shouldUpdate = (newProps) => {
-		if (newProps !== this.props) {
-            this.props = Object.assign({}, newProps);
+		console.log(newProps);
+		if (newProps !== this.currProps) {
+            this.currProps = Object.assign({}, newProps);
 
             return true;
         }
