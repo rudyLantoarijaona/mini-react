@@ -5,10 +5,6 @@ export default function HeaderComponent() {
 
     this.render = () => {
 
-    	const data = {
-            title: `LE TITRE`,
-        }
-
         return  '<div class="header" style="background-color: blue; color: white">{{title}}</div>';
     };
 }

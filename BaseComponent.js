@@ -1,3 +1,5 @@
+import "./interpolate.js";
+
 export default function BaseComponent() 
 {
 	this.currProps = {};
