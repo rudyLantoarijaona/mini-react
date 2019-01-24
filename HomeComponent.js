@@ -1,5 +1,6 @@
 import BaseComponent from "./BaseComponent.js";
 import HeaderComponent from "./HeaderComponent.js";
+import ContentComponent from "./ContentComponent.js";
 import FooterComponent from "./FooterComponent.js";
 
 export default function HomeComponent() {
