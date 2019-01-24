@@ -14,7 +14,7 @@ export default function HomeComponent() {
         const data = {
             title: `homepage`,
             hour : date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
-            content : '<h1>Hello ! John Doe</h1>',
+            content : '<div class="subscribe_form"> <div class="sub"><h1>Bonjour John Doe !</h1><h4>Venez découvrir notre nouveau produit</h4></div></div>',
         };
         //on est dans la page home, on appelle le module(component) header avec les data ci-dessus
         //on appelle sa fonction display avec en param data (les options qu'on veut (genre le titre))

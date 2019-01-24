@@ -1,0 +1,79 @@
+/* importação da fonte do google fonts */
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+
+body{
+	font-family: 'Oxygen', sans-serif;
+	background-color: silver; 
+	height: 100%; 
+}
+
+
+.subscribe_form{
+	background-color: #fbfbfb; 
+	margin: 80px auto; 
+	width: 380px; 
+	height: auto; 
+	border-style: solid; 
+	border-color: #fbfbfb; 
+	border-width: 1px;   
+	border-radius: 10px; 
+	text-align: center; 
+	padding-top: 20px; 
+	padding-bottom: 40px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	border-style: solid;
+	border-color: #17aedc;  
+	border-radius: 5px; 
+	text-align: left;
+	width: 300px; 
+	height: 40px; 	
+	margin-top: 10px; 
+	padding-left: 15px; 
+}
+
+
+.sub input:focus{
+	outline:0;
+	border: 2px solid #4897d8;
+}	
+
+
+button{
+	background-color: #17aedc; 
+	width: 320px; 
+	height: 45px; 
+	border-style: solid;
+	border-radius: 5px; 
+	border-color: #17aedc; 
+	color: #fbfbfb; 
+	text-transform: uppercase;
+	margin-top: 10px; 
+	cursor: pointer;
+}
+
+
+button:hover{
+	background-color: #4897d8;
+	border-color: #4897d8;  	
+}
+
+
+h1{
+	color: #17aedc; 
+	font-size: 36px; 
+	padding-bottom: 10px; 
+}
+
+
+p{
+	color: #0e0e0e; 
+	font-size: 20px; 
+}
+
+
+/* created by magda pimentel, may 2017 */
