@@ -4,6 +4,7 @@ export default function FooterComponent() {
     BaseComponent.apply(this);
 
     this.render = () => {
-        return  '<div class="footer" style="background-color: red; color: white">{{hour}}</div>';
+        return  "<div id='footer_holder'><div id='footer'><div id='blue2'>{{hour}}</div></div></div>";
+        
     };
 }

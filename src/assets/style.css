@@ -8,7 +8,49 @@ body{
 	height: 100%; 
 }
 
+#header_holder {
+	width: 100%;	
+	top: 0px;
+  left: 0;
+	background: #222;	
+  color: white;
+  text-align:center;
+  padding-top:15px;
+	}
 
+#header {
+	width: 100%;	
+	height: 20px;	
+	}
+
+#footer_holder {
+	width: 100%;	
+	top: 0px;
+  left: 0;
+	background: #222;	
+  color: white;
+  text-align:center;
+  
+	}
+
+#footer {
+	width: 100%;	
+	height: 50px;	
+	}
+
+#blue {
+	float: left;
+	width: 100%;
+	height: 20px;
+	border-bottom: 4px solid #3bb9ff;
+	}
+#blue2 {
+	float: left;
+	width: 100%;
+	height: 20px;
+	border-top: 4px solid #3bb9ff;
+  padding-top:15px;
+	}
 .subscribe_form{
 	background-color: #fbfbfb; 
 	margin: 80px auto; 

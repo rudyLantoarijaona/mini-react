@@ -5,6 +5,7 @@ export default function HeaderComponent() {
 
     this.render = () => {
 
-        return  '<div class="header" style="background-color: blue; color: white">{{title}}</div>';
+        return  "<div id='header_holder'><h2>{{title}}</h2><div id='header'><div id='blue'></div></div></div>";
+        
     };
 }
