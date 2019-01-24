@@ -1,5 +1,6 @@
 import BaseComponent from "./BaseComponent.js";
 import HeaderComponent from "./HeaderComponent.js";
+import ContentComponent from "./ContentComponent.js";
 import FooterComponent from "./FooterComponent.js";
 
 export default function HomeComponent() {
@@ -7,6 +8,7 @@ export default function HomeComponent() {
 
     this.render = () => {
         const header = new HeaderComponent();
+        const content = new ContentComponent();
         const footer = new FooterComponent();
         let date = new Date();
         const data = {
@@ -18,10 +20,13 @@ export default function HomeComponent() {
         //on return le bloc de la page main avec le header bien paramétré dedans
         let output_header = header.display(data)
         let output_footer = footer.display(data)
+        let output_content = content
 
         return '<div class="container">'
         		+
                 output_header
+                +
+                output_content
                 +
                 output_footer
                 +
