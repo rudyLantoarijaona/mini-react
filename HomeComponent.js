@@ -13,14 +13,15 @@ export default function HomeComponent() {
         let date = new Date();
         const data = {
             title: `homepage`,
-            hour : date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+            hour : date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds(),
+            content : '<h1>Hello ! John Doe</h1>',
         };
         //on est dans la page home, on appelle le module(component) header avec les data ci-dessus
         //on appelle sa fonction display avec en param data (les options qu'on veut (genre le titre))
         //on return le bloc de la page main avec le header bien paramétré dedans
         let output_header = header.display(data)
         let output_footer = footer.display(data)
-        let output_content = content
+        let output_content = content.display(data)
 
         return '<div class="container">'
         		+
